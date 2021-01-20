@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Mastermind</title>
+    <link rel="stylesheet" href="MastermindStyle.css">
+</head>
+
+<body>
+    
+    <div class="container" id="regles">
+        <h1>Bienvenue à cette session de Mastermind !</h1>
+        <h2>Les règles :</h2>
+        <p>Essayez de trouver la bonne combinaison, en moins de 12 essais !</p>
+        <p>Le résultat donné par l'ordinateur n'est pas ordonné, il indique combien il y a de jetons placés juste,
+            combien sont présents mais mal placés, et combien sont faux.</p>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4" id="panneau-joueur">
+                <div class="container">
+                    <div class="d-flex justify-content-center" id="choix-joueur">
+                        <img src="tokenblack.png" alt="black token" class="black-token" id="select-black">
+                        <img src="tokenred.png" alt="red token" class="red-token" id="select-red">
+                        <img src="tokenyellow.png" alt="yellow token" class="yellow-token" id="select-yellow">
+                        <img src="tokengreen.png" alt="green token" class="green-token" id="select-green">
+                        <img src="tokenblue.png" alt="blue token" class="blue-token" id="select-blue">
+                        <img src="tokenpurple.png" alt="purple token" class="purple-token" id="select-purple">
+                    </div>
+                    <div class="d-flex justify-content-center" id="selection-joueur">
+                        <img src="down-arrow.png" alt="" id="position-one">
+                        <img src="blank.png" alt="" id="position-two">
+                        <img src="blank.png" alt="" id="position-three">
+                        <img src="blank.png" alt="" id="position-four">
+                    </div>
+                    <div class="d-flex justify-content-center" id="couleur-joueur">
+                        <img src="tokenblack.png" alt="" class="black-token" id="select-color-one">
+                        <img src="tokenblack.png" alt="" class="black-token" id="select-color-two">
+                        <img src="tokenblack.png" alt="" class="black-token" id="select-color-three">
+                        <img src="tokenblack.png" alt="" class="black-token" id="select-color-four">
+                    </div>
+
+                    <div class="d-flex justify-content-center" id="fleches-joueur">
+                        <img src="blank.png" alt="">
+                        <img src="previous-button.png" alt="arrow left" class="" id="arrow-left">
+                        <img src="next-button.png" alt="arrow right" class="" id="arrow-right">
+                        <img src="blank.png" alt="">
+                    </div>
+
+                    <div class="d-flex justify-content-center">
+                        <input type="submit" id="btn-send">
+                        <div id="message"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-8" id="panndeau-ordinateur">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7" id="panneau-ordinateur-envoi">
+
+                        </div>
+                        <div class="col-sm-5" id="panneau-ordinateur-reponse">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="demo"> </div>
+
+    <!-- Optional JavaScript -->
+    <script src="MastermindJs.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="fireworks/jquery.fireworks.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+/**Classes de couleurs*/
+.red-token {
+    border-radius: 100%;
+    border: 15px solid #f00;
+    display: inline-block;
+}
+
+.yellow-token {
+    border-radius: 100%;
+    border: 15px solid #ff0;
+    display: inline-block;
+}
+
+.green-token {
+    border-radius: 100%;
+    border: 15px solid #0f0;
+    display: inline-block;
+}
+
+.blue-token {
+    border-radius: 100%;
+    border: 15px solid #00f;
+    display: inline-block;
+}
+
+.black-token {
+    border-radius: 100%;
+    border: 15px solid #000;
+    display: inline-block;
+}
+
+.purple-token {
+    border-radius: 100%;
+    border: 15px solid #f0f;
+    display: inline-block;
+}
+
+.blank-token{
+    border-radius: 100%;
+    border: 3px solid #000;
+    display: inline-block;
+}
